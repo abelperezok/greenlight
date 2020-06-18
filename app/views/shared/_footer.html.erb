@@ -13,8 +13,11 @@
 # with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 %>
 
+<%# Greenlight::Application::VERSION %>
+
 <footer class="footer pt-3">
-  <p class="text-center mb-1"><%= t("footer.powered_by", href: link_to(t("greenlight"), "https://beta.companieshouse.gov.uk/company/11575578", target: "_blank", rel: "noopener")).html_safe %> <%= Greenlight::Application::VERSION %></p>
+  <p class="text-center mb-1"><%= t("footer.powered_by", href_company_name: link_to("IGLU NW Ltd.", "https://beta.companieshouse.gov.uk/company/11575578", target: "_blank", rel: "noopener"), href_company_number: link_to("11575578", "https://beta.companieshouse.gov.uk/company/11575578", target: "_blank", rel: "noopener")).html_safe %>
+  </p>
 </footer>
 
 <%= render "shared/components/cookie_warning" %>

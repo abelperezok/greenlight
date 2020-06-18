@@ -223,19 +223,19 @@ en:
       help: If you believe this is a mistake, please contact your system administrator.
   expired_reset_token: Password reset link has expired!
   features:
-    title: Features
-    rooms: Personalized Rooms
-    recordings: Recording Management
-    designs: Custom Designs
-    authentication: User Authentication
+    title: Key Features
+    rooms: Dedicated Classrooms
+    recordings: Interactive Media 
+    designs: Shared Notes
+    authentication: Secure Authentication
   footer:
-    powered_by: A product by <b>%{href}</b>.
+    powered_by: "'IGLU Classroom' is a trading name of <b>%{href_company_name}</b> registered UK company number <b>%{href_company_number}</b>."
   forgot_password:
     subtitle: Forgot Password
     email: Email
     submit: Submit
   go_back: Go back
-  greenlight: IGLU
+  greenlight: IGLU Classroom
   header:
     all_recordings: All Recordings
     dropdown:
@@ -259,8 +259,8 @@ en:
     search:
       start: Start searching...
   landing:
-    about: "%{href} is a web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
-    welcome: Welcome to IGLU.
+    about: "%{href} is a real-time interactive remote digital classroom management suite that enables teaching staff to deliver their regular classes to pupils who are unable to attend in person. To create or join a classroom, click 'Sign up' above."
+    welcome: Welcome to IGLU Classroom.
     video: Watch our tutorial on using IGLU 
     upgrade: Show me how to upgrade to 2.0!
     version: We've released a new version of IGLU, but your database isn't compatible.
@@ -427,7 +427,7 @@ en:
       visibility: Visibility
       formats: Formats
     visibility:
-      public: Public
+      public: Shared
       unlisted: Unlisted
     format:
       notes: Notes
@@ -483,16 +483,16 @@ en:
     owner: Owner
     owner_banned: This room is currently unavailable
     no_room:
-      description: Enter the room url or the room id for the room you want to join.
+      description: Enter the classroom url or the classroom id for the room you want to join.
       edit_profile: Edit User Profile
-      go_to: Go to the Room
-      invalid_room_uid: The room url/uid you entered was invalid.
-      placeholder: Room url/uid
-      no_recent_rooms: You don't have any recently joined rooms
-      recent_rooms: Go To a Recently Joined Room
-      title: Join a Room
+      go_to: Enter Classroom
+      invalid_room_uid: The classroom url/uid you entered was invalid.
+      placeholder: Classroom url/uid
+      no_recent_rooms: You don't have any recently joined classroom
+      recent_rooms: Go To a Recently Joined Classroom
+      title: Enter Classroom
     no_sessions: This room has no sessions, yet!
-    recordings: Room Recordings
+    recordings: Class Recordings
     room_limit: You have reached the maximum number of rooms allowed
     room_limit_exceeded: You have exceeded the number of rooms allowed. Please delete %{difference} room(s) to access this room.
     sessions: Sessions
@@ -503,13 +503,13 @@ en:
     remove_shared_access_error: There was an error removing the shared room from your list
     shared_access_success: Room shared successfully
     shared_access_error: There was an error sharing the room
-    start: Start
+    start: Open Classroom
     unavailable: This room is currently unavailable due to the owner's email not being verified.
     update_settings_error: There was an error updating the room settings
     update_settings_success: Room settings successfully updated
     wait:
-      message: The meeting hasn't started yet.
-      auto: You will automatically join when the meeting starts.
+      message: The session hasn't started yet.
+      auto: You will automatically join when the session starts.
   settings:
     account:
       fullname: Full name
