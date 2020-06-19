@@ -20,7 +20,7 @@
         <%= image_tag(logo_image, class: "header-brand-img", alt:"") %>
       <% end %>
 
-      <div class="d-flex ml-auto">
+      <div class="d-block ml-auto">
         <% if current_user %>
 
           <% if current_user.has_role? :super_admin %>
@@ -77,9 +77,15 @@
                 <% end %>
               <% end %>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="http://igluclassroom.co.uk/contact" target="_blank" rel="noopener">
+              <% if current_user.highest_priority_role.get_permission("can_create_rooms") %>
+              <a class="dropdown-item" href="https://igluclassroom.co.uk/contact" target="_blank" rel="noopener">
                 <i class="dropdown-icon far fa-question-circle"></i> <%= t("header.dropdown.help") %>
               </a>
+              <% else %>
+              <a class="dropdown-item" href="https://igluclassroom.co.uk/user-support" target="_blank" rel="noopener">
+                <i class="dropdown-icon far fa-question-circle"></i> <%= t("header.dropdown.help") %>
+              </a>
+              <% end %>
               <% if Rails.configuration.report_issue_url.present? %>
                 <a class="dropdown-item" href="<%= Rails.configuration.report_issue_url %>" target="_blank" rel="noopener">
                   <i class="dropdown-icon fas fa-exclamation mr-3"></i><%= t("errors.internal.report") %>

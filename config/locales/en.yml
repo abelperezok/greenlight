@@ -488,7 +488,7 @@ en:
       go_to: Enter Classroom
       invalid_room_uid: The classroom url/uid you entered was invalid.
       placeholder: Classroom url/uid
-      no_recent_rooms: You don't have any recently joined classroom
+      no_recent_rooms: You don't have any recently joined classrooms
       recent_rooms: Go To a Recently Joined Classroom
       title: Enter Classroom
     no_sessions: This room has no sessions, yet!
