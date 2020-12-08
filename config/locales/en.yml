@@ -229,7 +229,7 @@ en:
     designs: Shared Notes
     authentication: Secure Authentication
   footer:
-    powered_by: "'IGLU Classroom' is a trading name of <b>%{href_company_name}</b> registered UK company number <b>%{href_company_number}</b>."
+    powered_by: "'IGLU Classroom' is a trading name of %{href_company_name} registered UK company number %{href_company_number}."
   forgot_password:
     subtitle: Forgot Password
     email: Email

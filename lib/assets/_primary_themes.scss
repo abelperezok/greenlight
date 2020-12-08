@@ -1,3 +1,16 @@
+// Some variables have been overridden here to be inline with 
+// the branding of IGLU Classroom
+//$primary-color: #030303;
+$primary-color-darken: #000000B3;
+
+// Set the default font-family 
+* {
+  font-family: 'Aktiv Grotesk Corp';
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .btn {
   &:focus {
     box-shadow: 0 0 0 2px $primary-color-lighten;
@@ -5,11 +18,29 @@
 }
 
 .btn-primary,
-.btn-primary:visited,
+.btn-primary:visited {
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+  color: white !important;
+  font-family: 'Montserrat Black' !important;
+  font-size: 0.85rem !important;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  font-weight: 700;
+  line-height: 3.2px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  text-decoration-line: none !important;
+}
 .btn-primary i {
   background-color: $primary-color !important;
   border-color: $primary-color !important;
   color: white !important;
+  
 }
 
 .btn-primary:active,
@@ -36,7 +67,15 @@
 }
 
 a {
-  color: $primary-color !important;
+  /* color: $primary-color !important;*/
+  color: rgba(56, 56, 59, 0.68) !important;
+  text-decoration-color: rgba(56, 56, 59, 0.68) !important;
+  text-decoration-line: underline !important;
+  text-decoration-style: solid !important;
+}
+
+.btn {
+  text-decoration-line: none !important
 }
 
 .oauth-signin {
@@ -194,3 +233,52 @@ input:focus, select:focus {
     @extend .btn-primary;
   }
 }
+
+/* Overriding styles for IGLU branding */
+
+p {
+  color: black !important;
+  font-family: 'Aktiv Grotesk Corp';
+  font-weight: 400 !important;
+  font-size: 1.2rem !important;
+  font-style: normal;
+}
+
+.home-image {
+   background-image: url('https://iglu-edu.s3-eu-west-1.amazonaws.com/pexels-photo-3807755.jpeg');
+   background-position: center;
+   background-size: cover;
+}
+
+h1 {
+  font-family:'Roboto' !important;
+  font-weight: 700 !important;
+  font-size: 2.3rem !important;
+}
+
+h2, h4 {
+  font-family: 'Roboto';
+}
+
+.header span {
+  font-family: 'Montserrat Black' !important;
+  font-size: 1rem !important;
+}
+
+a#sign-up-button {
+  background-color: navy !important;
+}
+
+.header {
+  border-bottom-style:none;
+  height: auto;
+}
+
+footer p {
+  font-size: 0.8rem !important;
+}
+
+.header-nav {
+  text-decoration-line: none !important;
+}
+
