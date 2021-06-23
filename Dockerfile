@@ -22,8 +22,10 @@ RUN apk update \
 COPY Gemfile* ./
 COPY Gemfile Gemfile.lock $RAILS_ROOT/
 
+RUN bundle config --delete frozen && bundle update mimemagic
+
 RUN bundle config --global frozen 1 \
-    && bundle install --deployment --without development:test:assets -j4 --path=vendor/bundle \
+    && bundle install --no-deployment --without development:test:assets -j4 --path=vendor/bundle \
     && rm -rf vendor/bundle/ruby/2.5.0/cache/*.gem \
     && find vendor/bundle/ruby/2.5.0/gems/ -name "*.c" -delete \
     && find vendor/bundle/ruby/2.5.0/gems/ -name "*.o" -delete
@@ -40,7 +42,7 @@ FROM ruby:2.5.1-alpine
 
 # Set a variable for the install location.
 ARG RAILS_ROOT=/usr/src/app
-ARG PACKAGES="tzdata curl postgresql-client sqlite-libs yarn nodejs bash"
+ARG PACKAGES="tzdata curl postgresql-client sqlite-libs yarn nodejs bash git"
 
 ENV RAILS_ENV=production
 ENV BUNDLE_APP_CONFIG="$RAILS_ROOT/.bundle"
@@ -60,6 +62,8 @@ EXPOSE 80
 # Sets the footer of greenlight application with current build version
 ARG version_code
 ENV VERSION_CODE=$version_code
+
+RUN bundle install
 
 # Start the application.
 CMD ["bin/start"]
