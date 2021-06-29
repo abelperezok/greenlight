@@ -196,7 +196,8 @@ ar:
     designs: تصاميم مخصصة
     authentication: مصادقة المستخدم
   footer:
-    powered_by: "مشغل بواسطة%{href}."
+    powered_by: "مشغل بواسطة %{href_company_name} %{href_company_number}."
+#     powered_by: "مشغل بواسطة%{href}."
   forgot_password:
     subtitle: هل نسيت كلمة المرور
     email: البريد الإلكتروني
