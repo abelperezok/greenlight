@@ -200,7 +200,7 @@ es:
     designs: Diseño personalizado
     authentication: Autentificación de usuario
   footer:
-    powered_by: "Funciona con %{href}"
+    powered_by: "Funciona con %{href_company_name} %{href_company_number}"
   forgot_password:
     subtitle: Olvidé la contraseña
     email: Cuenta de correo
